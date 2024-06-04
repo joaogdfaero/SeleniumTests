@@ -21,5 +21,6 @@ public class BuscaSeleniumPuro{
         driver.get(url) // acessa o URL
         driver.findElement(By.id('searchtext')).sendKeys('TestLink' + Keys.ENTER); // Acha o campo de busca, digita a busca e aperta enter
         driver.findElement(By.cssSelector('span.comprar')).click(); // acha o botão compra e realiza a compra
+        AssertEquals('TestLink', driver.findElement(By.cssSelector('span.item-title')).getText()) // garante que o nome do curso está certo
     }  
 }
