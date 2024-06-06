@@ -6,9 +6,9 @@ public class BuscaSeleniumPuro{
     public void iniciar(){
         driver = new ChromeDriver();
         // Timeout implícito
-        driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILISECONDS)
+        driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILISECONDS);
         // Evita que tenha outra tela na frente
-        driver.manage().window().maximize()
+        driver.manage().window().maximize();
     }
 
     @After
