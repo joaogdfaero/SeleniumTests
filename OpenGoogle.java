@@ -39,9 +39,10 @@ public class Exercises {
     }
 
     if (buttonContent != null) {
-        buttonContent.click(); 
+        buttonContent.click();
 
         WebElement buttonNewRepo = null;
+        
         try {
             buttonNewRepo = driver.findElement(By.xpath('//*[@id=\":r11:--label\"]'));
         } catch (NoSuchElementException e) {
